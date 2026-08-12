@@ -1,0 +1,17 @@
+# Collection. vLLM's API moves quickly, so the version is pinned to the one the
+# scripts were written against.
+vllm==0.26.0
+datasets>=2.14
+huggingface_hub>=0.20
+transformers>=4.40
+
+# Analysis on the laptop side
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+
+# R side, installed separately:
+#   install.packages(c("R6","dplyr","readr","tidyr","loo","posterior"))
+#   install.packages("cmdstanr", repos = c("https://stan-dev.r-universe.dev",
+#                                          getOption("repos")))
+#   cmdstanr::install_cmdstan()

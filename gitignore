@@ -1,0 +1,24 @@
+# Reconstructed benchmark text. Contains questions, reference answers and
+# completions copied from the source benchmark. Never commit.
+work/
+*.jsonl.gz
+
+# Belt and braces. The pipeline no longer writes here, but an older checkout or a
+# hand-run script might.
+data/pilot_items.jsonl
+data/*.jsonl
+
+# Raw judge transcripts. Judges quote benchmark text while reasoning, so these
+# are a partial reproduction of it and are not redistributed.
+out/raw_ratings.jsonl
+out/*.rds
+
+# Credentials
+.env
+*.token
+
+# Local
+__pycache__/
+.Rhistory
+.RData
+venv/
